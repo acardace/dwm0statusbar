@@ -6,6 +6,8 @@ LDFLAGS += -lX11
 SRC = dwm0d.c dwm0c.c
 OBJ = ${SRC:.c=.o}
 
+PREFIXDIR=/usr
+
 all: dwm0d dwm0c
 
 .c.o:
@@ -24,9 +26,8 @@ clean:
 	@rm -f dwm0d dwm0c *.o
 
 install: all
-	@echo installing executables to ${DESTDIR}${PREFIX}/bin
-	@install -d -m 0755 ${DESTDIR}${PREFIX}/bin
-	@install -m 0755 dwm0d      ${DESTDIR}${PREFIX}/bin/
-	@install -m 0755 dwm0c      ${DESTDIR}${PREFIX}/bin/
+	@install -d -m 0755	${DESTDIR}${PREFIXDIR}/bin
+	@install -m 0755 dwm0d	${DESTDIR}${PREFIXDIR}/bin/
+	@install -m 0755 dwm0c	${DESTDIR}${PREFIXDIR}/bin/
 
 .PHONY: all clean install
