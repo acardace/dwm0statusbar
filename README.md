@@ -19,4 +19,4 @@ A package called dwm0statusbard-git is available in the AUR.
 * github user: johnko (from whom I obtained the code that I eventually edited)
 
 ------------------------------------------------------------
-Copyright **Antonio Cardace** 2015, cardace@tutanota.com
+Copyright **Antonio Cardace** 2015, antonio@cardace.it
